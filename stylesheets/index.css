@@ -14,7 +14,13 @@ html, body {
 .picture-frame {
     width: 150px;
     display: inline-block;
+    position: absolute;
+    top: 150px;
 }
 .picture-frame img {
-    width: 100%
+    width: 100%;
+    margin-left: 200px;
+
+.vintage-playground {
+    position: relative;
 }
