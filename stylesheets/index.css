@@ -12,15 +12,28 @@ html, body {
 }
 
 .picture-frame {
-    width: 150px;
-    display: inline-block;
-    position: absolute;
+    width: 80%;
     top: 150px;
+
+    /* max-height: 10%; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
 }
 .picture-frame img {
-    width: 100%;
-    margin-left: 200px;
+    width:100%;
+    padding: 10%;
+    overflow: hidden;
+}
 
 .vintage-playground {
-    position: relative;
+    border: 5px solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 300px;
+    /* flex-wrap: wrap; */
 }
