@@ -37,3 +37,14 @@ html, body {
     min-height: 300px;
     /* flex-wrap: wrap; */
 }
+@media screen and (min-width: 500px) {
+    body {
+        background: red;
+    }
+}
+
+@media screen and (min-width: 700px){
+    body {
+        background: purple;
+    }
+}
