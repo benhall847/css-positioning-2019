@@ -10,8 +10,8 @@ for (var i = 0; i <= (targetElements.length - 1); i++){
 function ClickResponseSUPER1000version2(event) {
     console.log("OMG ITS AMAAAAZIZINGGGGG");
     console.log("YAAAAAA IM ALLIIIIVEEEE");
-    console.log(event.target.parentElement);
-    event.target.parentElement.classList.add('big');
+    console.log(event.target);
+    event.target.classList.toggle('big');
 }
 
 

@@ -20,6 +20,7 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    /* opacity: .75; */
     /* border: 5px solid black; */
 }
 .picture-frame:hover {
@@ -28,16 +29,20 @@ html, body {
 
 .picture-frame:hover img{
     transform:scale(1.10);
-    opacity:1.0;
 }
 .picture-frame img {
     width:100%;
     /* padding: 10%; */
-    opacity:0.9;
+    transition: all 800ms ease-in-out .2s;
+    /* 1. property names or "all" */
+    /* 2. */
+    /* opacity:0.9; */
 }
 
-.picture-frame.big img {
+.picture-frame img.big {
     transform: scale(2.0);
+    opacity:1.0;
+
 }
 
 
