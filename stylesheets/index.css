@@ -16,7 +16,6 @@ html, body {
     top: 150px;
     /* flex-shrink: 0; */
     /* max-height: 10%; */
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,9 +33,13 @@ html, body {
 .picture-frame img {
     width:100%;
     /* padding: 10%; */
-    overflow: hidden;
     opacity:0.9;
 }
+
+.picture-frame.big img {
+    transform: scale(2.0);
+}
+
 
 .vintage-playground {
     border: 5px solid gold;
