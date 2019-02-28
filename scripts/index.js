@@ -5,9 +5,18 @@
 // const means that it CANNOT BE REASSIIGGNNEDDD
 const targetElements = document.querySelectorAll("[data-target]");
 
+// for (var i = 0; i <= (targetElements.length - 1); i++){
 
-targetElements[0].addEventListener("click", ClickResponseSUPER1000version2);
+
+// }
 function ClickResponseSUPER1000version2() {
     console.log("OMG ITS AMAAAAZIZINGGGGG");
     console.log("YAAAAAA IM ALLIIIIVEEEE");
 }
+
+
+function attachClickHandler(oneElement) {
+    oneElement.addEventListener("click", ClickResponseSUPER1000version2);
+}
+
+targetElements.forEach(attachClickHandler);
