@@ -14,18 +14,28 @@ html, body {
 .picture-frame {
     width: 80%;
     top: 150px;
-
+    /* flex-shrink: 0; */
     /* max-height: 10%; */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     /* border: 5px solid black; */
+}
+.picture-frame:hover {
+    outline:2px solid green;
+}
+
+.picture-frame:hover img{
+    transform:scale(1.10);
+    opacity:1.0;
 }
 .picture-frame img {
     width:100%;
-    padding: 10%;
+    /* padding: 10%; */
     overflow: hidden;
+    opacity:0.9;
 }
 
 .vintage-playground {
@@ -34,17 +44,29 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 300px;
+    /* min-height: 300px; */
     /* flex-wrap: wrap; */
 }
 @media screen and (min-width: 500px) {
     body {
         background: red;
     }
+    .picture-frame {
+        width:33%;
+    }
+    .vintage-playground {
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (min-width: 700px){
     body {
         background: purple;
+    }
+    .logo {
+        font-size: 32px;
+        text-align: center;
     }
 }
